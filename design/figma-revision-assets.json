@@ -1,0 +1,62 @@
+{
+  "logo-maroon": {
+    "path": "assets/brand/deoluxe-logo-transparent-maroon-v3.png",
+    "response": {
+      "success": true,
+      "imageHash": "dd47245b89c7963e29a4f03c60d66f65e63b012d",
+      "sizeBytes": 30456,
+      "contentType": "image/png",
+      "placedOnNodeId": "23:10"
+    }
+  },
+  "cap-maroon": {
+    "path": "assets/concepts/products/concept-cap-wine-maroon-01.png",
+    "response": {
+      "success": true,
+      "imageHash": "e4b937ad015aee47ae90c2adf385341a0516eec8",
+      "sizeBytes": 1871150,
+      "contentType": "image/png",
+      "placedOnNodeId": "23:18"
+    }
+  },
+  "cap-navy": {
+    "path": "assets/concepts/products/concept-cap-midnight-navy-01.png",
+    "response": {
+      "success": true,
+      "imageHash": "deafe20760201a0ccb796414c1de9f152196038d",
+      "sizeBytes": 1935059,
+      "contentType": "image/png",
+      "placedOnNodeId": "23:23"
+    }
+  },
+  "logo-white": {
+    "path": "assets/brand/deoluxe-logo-transparent-white-v3.png",
+    "response": {
+      "success": true,
+      "imageHash": "c85924b53389e0343c010d01cbd1ea37a0efa053",
+      "sizeBytes": 20463,
+      "contentType": "image/png",
+      "placedOnNodeId": "23:14"
+    }
+  },
+  "tee-ivory": {
+    "path": "assets/concepts/products/concept-tee-warm-ivory-01.png",
+    "response": {
+      "success": true,
+      "imageHash": "e5cb1e50a0a01e50c2643b56ce9297188afb1238",
+      "sizeBytes": 1421587,
+      "contentType": "image/png",
+      "placedOnNodeId": "23:27"
+    }
+  },
+  "tee-forest": {
+    "path": "assets/concepts/products/concept-tee-forest-green-01.png",
+    "response": {
+      "success": true,
+      "imageHash": "2be333861aa81936c9d842dd300a2bfe0cb41726",
+      "sizeBytes": 1400562,
+      "contentType": "image/png",
+      "placedOnNodeId": "23:31"
+    }
+  }
+}

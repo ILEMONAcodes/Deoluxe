@@ -1,0 +1,77 @@
+[
+  {
+    "source": "assets/incoming/products/products-blackboy-03.jpg",
+    "destination": "public/images/products/tee-black.webp",
+    "bytes": 41208
+  },
+  {
+    "source": "assets/incoming/products/products-blackboy-02.jpg",
+    "destination": "public/images/products/tee-white.webp",
+    "bytes": 43476
+  },
+  {
+    "source": "assets/incoming/products/products-blackboy-01.jpg",
+    "destination": "public/images/products/tee-red.webp",
+    "bytes": 41032
+  },
+  {
+    "source": "assets/incoming/products/products-velvet-aura-01.jpg",
+    "destination": "public/images/products/velvet.webp",
+    "bytes": 109442
+  },
+  {
+    "source": "assets/incoming/products/products-velvet-aura-02.jpg",
+    "destination": "public/images/products/velvet-detail.webp",
+    "bytes": 119618
+  },
+  {
+    "source": "assets/incoming/products/products-eclipse-01.jpg",
+    "destination": "public/images/products/eclipse.webp",
+    "bytes": 106668
+  },
+  {
+    "source": "assets/incoming/products/products-eclipse-03.jpg",
+    "destination": "public/images/products/eclipse-back.webp",
+    "bytes": 113952
+  },
+  {
+    "source": "assets/processed/products/products-statement-cap-black-cutout-v1.png",
+    "destination": "public/images/products/cap-black.webp",
+    "bytes": 97650
+  },
+  {
+    "source": "assets/processed/products/products-statement-cap-green-cutout-v1.png",
+    "destination": "public/images/products/cap-green.webp",
+    "bytes": 114166
+  },
+  {
+    "source": "assets/concepts/products/concept-cap-wine-maroon-01.png",
+    "destination": "public/images/products/cap-maroon.webp",
+    "bytes": 98194
+  },
+  {
+    "source": "assets/concepts/products/concept-cap-midnight-navy-01.png",
+    "destination": "public/images/products/cap-navy.webp",
+    "bytes": 101916
+  },
+  {
+    "source": "assets/concepts/products/concept-tee-warm-ivory-01.png",
+    "destination": "public/images/products/tee-ivory.webp",
+    "bytes": 71154
+  },
+  {
+    "source": "assets/concepts/products/concept-tee-forest-green-01.png",
+    "destination": "public/images/products/tee-forest.webp",
+    "bytes": 65286
+  },
+  {
+    "source": "assets/incoming/hero/hero-velvet-campaign-01.jpg",
+    "destination": "public/images/editorial/campaign.webp",
+    "bytes": 296692
+  },
+  {
+    "source": "assets/incoming/editorial/editorial-blackboy-studio-01.jpg",
+    "destination": "public/images/editorial/studio.webp",
+    "bytes": 92576
+  }
+]

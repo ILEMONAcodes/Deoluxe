@@ -1,0 +1,55 @@
+:root {
+  --brand-maroon-700: #4a0706;
+  --brand-maroon-600: #650a09;
+  --brand-maroon-500: #7f1514;
+  --brand-maroon-100: #f4e3e2;
+  --ivory-50: #faf7f4;
+  --ivory-100: #f2ede8;
+  --ink-900: #141111;
+  --ink-600: #5e5856;
+  --ink-300: #c9c2be;
+  --white: #fff;
+  --success: #1f7a4d;
+  --error: #b3261e;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --touch: 44px;
+  --button-height: 52px;
+  --radius-input: 16px;
+  --radius-image: 20px;
+  --radius-card: 24px;
+  --radius-pill: 999px;
+  --content-max: 1200px;
+  --header-mobile: 76px;
+  --header-desktop: 100px;
+  --nav-height: 64px;
+  --hero-mobile-image: 280px;
+  --hero-desktop-height: 510px;
+  --hero-copy-width: 470px;
+  --shadow-nav: 0 12px 32px rgb(20 17 17 / 18%);
+  --motion-fast: 200ms;
+}
+
+@theme inline {
+  --color-brand: var(--brand-maroon-600);
+  --color-brand-dark: var(--brand-maroon-700);
+  --color-canvas: var(--ivory-50);
+  --color-surface: var(--ivory-100);
+  --color-ink: var(--ink-900);
+  --color-muted: var(--ink-600);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
+  --breakpoint-sm: 40rem;
+  --breakpoint-lg: 64rem;
+}

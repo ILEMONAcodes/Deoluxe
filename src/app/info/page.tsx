@@ -1,0 +1,4 @@
+import Image from "next/image";
+import { ButtonLink } from "@/components/ui/button";
+export const metadata = { title: "The world of Deoluxe" };
+export default function Info() { return <section className="info-page container"><h1>The world of Deoluxe.</h1><div className="info-photo"><Image src="/images/editorial/campaign.webp" alt="Deoluxe campaign models wearing signature two-piece sets" fill sizes="(min-width: 1024px) 800px, 100vw" className="object-cover" /></div><h2>Wear the statement.</h2><p>Luxury with a streetwear edge. Explore Deoluxe pieces, from graphic tees to signature sets and statement caps.</p><ButtonLink href="https://www.instagram.com/deolaluxury/" target="_blank" rel="noreferrer">Talk to Deoluxe on Instagram</ButtonLink><h2>Deoluxe, one tap away.</h2><p>On iPhone, choose Share → Add to Home Screen. On Android, open your browser menu and choose Install app.</p></section>; }

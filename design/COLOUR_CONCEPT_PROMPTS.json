@@ -1,0 +1,32 @@
+[
+  {
+    "key": "logo-maroon",
+    "path": "assets/brand/deoluxe-logo-maroon.png",
+    "prompt": "Use case: background-extraction. Edit target: supplied Deoluxe DL monogram with vertical DEOLUXE wordmark. Remove maroon square background completely to real transparent alpha. Recolour only the existing white logo strokes to a single flat deep maroon #650A09. Preserve the exact letter contours, serif shapes, overlapping DL and small vertical DEOLUXE text, spacing and aspect ratio. Do not redesign or retype any part. Deliver the standalone full logo, tightly framed with 8% transparent breathing room, sharp clean edges. No rectangle, no badge, no shadow, no added elements. It must be the same logo extracted and recoloured, not a new logo."
+  },
+  {
+    "key": "logo-white",
+    "path": "assets/brand/deoluxe-logo-maroon.png",
+    "prompt": "Use case: background-extraction. Edit target supplied Deoluxe DL monogram and vertical DEOLUXE wordmark. Remove the entire maroon square and leave genuine transparent alpha. Keep the logo pure white. Preserve the exact existing serif contours, overlapping DL, vertical DEOLUXE letters, spacing and proportions; do not redraw or retype. Standalone full logo tightly framed with 8% transparent breathing room. Sharp edges, no rectangle, no badge, no shadow, no background. Same logo extracted, not a redesign."
+  },
+  {
+    "key": "cap-maroon",
+    "path": "assets/processed/products/products-statement-cap-black-cutout-v1.png",
+    "prompt": "Use case: precise-object-edit. Edit target supplied Deoluxe statement trucker cap cutout. Create one proposed colourway by changing ONLY black crown and black brim fabric to deep wine maroon #650A09. Keep cream puffy lettering exactly F#CKING DEOLUXE, printed mesh side panels, brim label, stitching, shape and three-quarter camera angle unchanged. Product concept photo with genuine transparent alpha, whole cap visible, 10% breathing room. No hand, no added writing or stickers, no other objects. Photoreal materials. It is the exact same cap design in wine maroon."
+  },
+  {
+    "key": "cap-navy",
+    "path": "assets/processed/products/products-statement-cap-black-cutout-v1.png",
+    "prompt": "Use case: precise-object-edit. Edit target supplied Deoluxe statement trucker cap cutout. Proposed colourway: change ONLY black crown and brim fabric to deep midnight navy #172B46. Preserve cream puffy F#CKING DEOLUXE lettering verbatim, mesh-panel printed pattern, brim label, stitching, proportions, three-quarter camera angle and realistic materials. Genuine transparent alpha, entire cap visible with 10% breathing room. No hand, background, sold-out sticker, added branding or other objects. Exact same cap design in midnight navy."
+  },
+  {
+    "key": "tee-ivory",
+    "path": "assets/incoming/products/products-blackboy-03.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target supplied black Deoluxe graphic tee product image. Create proposed warm ivory colourway: change ONLY the plain black cotton fabric to warm ivory #F2EDE8. Preserve the exact entire large printed artwork, blue DEOLUXE heading and knitted-mask figure with goggles, logo lettering and print placement, garment cut, folds, collar and sleeves. No new graphics, no retyping text. Same front-facing isolated product photograph, entire tee visible and centered on genuine transparent alpha, 8% breathing room. Do not turn the printed figure into a real person; it is flat garment artwork."
+  },
+  {
+    "key": "tee-forest",
+    "path": "assets/incoming/products/products-blackboy-03.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target supplied black Deoluxe graphic tee product photo. Create proposed forest-green colourway: change ONLY plain black cotton fabric to deep forest green #183D32. Preserve the exact entire original print with blue DEOLUXE heading, knitted-mask figure, goggles, lettering, artwork colours and placement. Same cut, folds, collar, sleeves and front-facing camera. Entire tee isolated on genuine transparent alpha with 8% breathing room. No redesign, extra text, objects or model; the printed figure stays flat garment artwork."
+  }
+]

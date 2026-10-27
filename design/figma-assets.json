@@ -1,0 +1,156 @@
+[
+  {
+    "path": "assets/brand/deoluxe-logo-maroon.png",
+    "nodeId": "5:34",
+    "response": {
+      "success": true,
+      "imageHash": "7b279ed246b42e46b1ae126ccac57c9a7501f9f6",
+      "sizeBytes": 33528,
+      "contentType": "image/png",
+      "placedOnNodeId": "5:34"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-blackboy-01.jpg",
+    "nodeId": "5:35",
+    "response": {
+      "success": true,
+      "imageHash": "304b4068afcb5c6eaf0517a1687761b8d43a4f67",
+      "sizeBytes": 238409,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:35"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-blackboy-02.jpg",
+    "nodeId": "5:36",
+    "response": {
+      "success": true,
+      "imageHash": "d7244082c771ef499104d175e512eb15fd3f934a",
+      "sizeBytes": 215099,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:36"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-blackboy-03.jpg",
+    "nodeId": "5:37",
+    "response": {
+      "success": true,
+      "imageHash": "690b2ee3fc65ae261019066c5f7462513585518b",
+      "sizeBytes": 225692,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:37"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-velvet-aura-01.jpg",
+    "nodeId": "5:38",
+    "response": {
+      "success": true,
+      "imageHash": "9507a9cddc7fe0c8b3c8933cd28455b18c21e624",
+      "sizeBytes": 782331,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:38"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-velvet-aura-02.jpg",
+    "nodeId": "5:39",
+    "response": {
+      "success": true,
+      "imageHash": "a7ef9f3dd18ba9e990315056e50e6d680c00c6b4",
+      "sizeBytes": 645907,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:39"
+    }
+  },
+  {
+    "path": "assets/incoming/hero/hero-velvet-campaign-01.jpg",
+    "nodeId": "5:40",
+    "response": {
+      "success": true,
+      "imageHash": "22dd8dee78444fc5841ab19b5e36e843c0c72bb0",
+      "sizeBytes": 746796,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:40"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-eclipse-01.jpg",
+    "nodeId": "5:41",
+    "response": {
+      "success": true,
+      "imageHash": "9f58dc9b078d557cceeb8d134e66f40bda73c733",
+      "sizeBytes": 1069254,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:41"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-eclipse-02.jpg",
+    "nodeId": "5:42",
+    "response": {
+      "success": true,
+      "imageHash": "9f58dc9b078d557cceeb8d134e66f40bda73c733",
+      "sizeBytes": 1069254,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:42"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-eclipse-03.jpg",
+    "nodeId": "5:43",
+    "response": {
+      "success": true,
+      "imageHash": "cc07a3929af9c40154ab07ea708c6ef37cbce446",
+      "sizeBytes": 771808,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:43"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-statement-cap-01.jpg",
+    "nodeId": "5:44",
+    "response": {
+      "success": true,
+      "imageHash": "89a772e07a5eb837e9f93778bdae3a87902365ba",
+      "sizeBytes": 218274,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:44"
+    }
+  },
+  {
+    "path": "assets/incoming/products/products-statement-cap-02.jpg",
+    "nodeId": "5:45",
+    "response": {
+      "success": true,
+      "imageHash": "cceea1b4d8bd752c716bc00d7a6bb9c8922217c3",
+      "sizeBytes": 223298,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:45"
+    }
+  },
+  {
+    "path": "assets/incoming/editorial/editorial-blackboy-studio-01.jpg",
+    "nodeId": "5:46",
+    "response": {
+      "success": true,
+      "imageHash": "de6cf621eee17e9b8113e4131b6a7e3cdedd5174",
+      "sizeBytes": 360954,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:46"
+    }
+  },
+  {
+    "path": "assets/incoming/editorial/editorial-blackboy-studio-02.jpg",
+    "nodeId": "5:47",
+    "response": {
+      "success": true,
+      "imageHash": "9e05c9cb06d984e5603c75bfacb7b2e8fd4a32e1",
+      "sizeBytes": 396263,
+      "contentType": "image/jpeg",
+      "placedOnNodeId": "5:47"
+    }
+  }
+]

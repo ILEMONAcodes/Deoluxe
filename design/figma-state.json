@@ -1,0 +1,186 @@
+{
+  "sessionId": "dbc5f52d-04dc-4c79-86ff-9f9494eb18ce",
+  "pages": {
+    "Cover": "0:1",
+    "Tokens": "5:2",
+    "Components": "5:3",
+    "Mobile": "5:4",
+    "Desktop": "5:5",
+    "Prototype": "5:6",
+    "Assets": "5:7",
+    "Colour Studio": "23:2"
+  },
+  "mobile": {
+    "404": "6:94",
+    "Home": "6:78",
+    "Catalogue": "6:79",
+    "Product": "6:80",
+    "Sold-out product": "6:81",
+    "Favourites": "6:82",
+    "Bag": "6:83",
+    "Checkout contact": "6:84",
+    "Checkout delivery": "6:85",
+    "Checkout review": "6:86",
+    "Payment success": "6:87",
+    "Payment failed": "6:88",
+    "Order lookup": "6:89",
+    "Order status": "6:90",
+    "Profile": "6:91",
+    "Search": "6:92",
+    "Offline": "6:93",
+    "Onboarding": "6:95",
+    "Install app": "6:96",
+    "Notify me": "6:97",
+    "Empty bag": "6:98",
+    "No results": "6:99",
+    "Loading": "6:100",
+    "Error": "6:101",
+    "Filters": "6:102",
+    "Size guide": "6:103",
+    "Waitlist success": "14:842",
+    "Empty favourites": "14:863",
+    "Delivery & returns": "14:884",
+    "Contact": "14:905",
+    "Privacy": "14:926",
+    "Terms": "14:947",
+    "Checkout offline": "14:968",
+    "Checkout validation": "14:989"
+  },
+  "desktop": {
+    "404": "6:120",
+    "Home": "6:104",
+    "Catalogue": "6:105",
+    "Product": "6:106",
+    "Sold-out product": "6:107",
+    "Favourites": "6:108",
+    "Bag": "6:109",
+    "Checkout contact": "6:110",
+    "Checkout delivery": "6:111",
+    "Checkout review": "6:112",
+    "Payment success": "6:113",
+    "Payment failed": "6:114",
+    "Order lookup": "6:115",
+    "Order status": "6:116",
+    "Profile": "6:117",
+    "Search": "6:118",
+    "Offline": "6:119",
+    "Install app": "6:121",
+    "Notify me": "6:122",
+    "Cart drawer": "6:123",
+    "Admin login": "6:124",
+    "Admin products": "6:125",
+    "Admin product form": "6:126",
+    "Admin orders": "6:127",
+    "Admin order detail": "6:128",
+    "State library": "6:129",
+    "Home tablet": "6:130",
+    "Product tablet": "6:131",
+    "Home narrow": "6:132",
+    "Waitlist success": "15:402",
+    "Empty favourites": "15:435",
+    "Delivery & returns": "15:468",
+    "Contact": "15:501",
+    "Privacy": "15:534",
+    "Terms": "15:567",
+    "Checkout offline": "15:600",
+    "Checkout validation": "15:633",
+    "Size guide": "17:411",
+    "Empty bag": "17:449",
+    "No results": "17:483"
+  },
+  "images": {
+    "logo": "dd47245b89c7963e29a4f03c60d66f65e63b012d",
+    "tee-red": "304b4068afcb5c6eaf0517a1687761b8d43a4f67",
+    "tee-white": "d7244082c771ef499104d175e512eb15fd3f934a",
+    "tee-black": "690b2ee3fc65ae261019066c5f7462513585518b",
+    "velvet": "9507a9cddc7fe0c8b3c8933cd28455b18c21e624",
+    "velvet-detail": "a7ef9f3dd18ba9e990315056e50e6d680c00c6b4",
+    "campaign": "22dd8dee78444fc5841ab19b5e36e843c0c72bb0",
+    "eclipse": "9f58dc9b078d557cceeb8d134e66f40bda73c733",
+    "eclipse-duplicate": "9f58dc9b078d557cceeb8d134e66f40bda73c733",
+    "eclipse-back": "cc07a3929af9c40154ab07ea708c6ef37cbce446",
+    "cap-green-original": "89a772e07a5eb837e9f93778bdae3a87902365ba",
+    "cap-black-original": "cceea1b4d8bd752c716bc00d7a6bb9c8922217c3",
+    "studio": "de6cf621eee17e9b8113e4131b6a7e3cdedd5174",
+    "studio-alt": "9e05c9cb06d984e5603c75bfacb7b2e8fd4a32e1",
+    "cap-black": "eb0f451f5c2cc1048a368db1ff6a08d2b80dbb79",
+    "cap-green": "fec68ebf7a02ad2ad19211f3c39bad0ac06b48cd",
+    "logo-maroon": "dd47245b89c7963e29a4f03c60d66f65e63b012d",
+    "cap-maroon": "e4b937ad015aee47ae90c2adf385341a0516eec8",
+    "cap-navy": "deafe20760201a0ccb796414c1de9f152196038d",
+    "logo-white": "c85924b53389e0343c010d01cbd1ea37a0efa053",
+    "tee-ivory": "e5cb1e50a0a01e50c2643b56ce9297188afb1238",
+    "tee-forest": "2be333861aa81936c9d842dd300a2bfe0cb41726",
+    "logo-original": "7b279ed246b42e46b1ae126ccac57c9a7501f9f6"
+  },
+  "revision02": {
+    "assetBoard": "23:3",
+    "colourStudio": "28:2",
+    "logoMasters": {
+      "maroon": "25:2",
+      "white": "25:6"
+    },
+    "assets": {
+      "logo-maroon": {
+        "path": "assets/brand/deoluxe-logo-transparent-maroon-v3.png",
+        "response": {
+          "success": true,
+          "imageHash": "dd47245b89c7963e29a4f03c60d66f65e63b012d",
+          "sizeBytes": 30456,
+          "contentType": "image/png",
+          "placedOnNodeId": "23:10"
+        }
+      },
+      "cap-maroon": {
+        "path": "assets/concepts/products/concept-cap-wine-maroon-01.png",
+        "response": {
+          "success": true,
+          "imageHash": "e4b937ad015aee47ae90c2adf385341a0516eec8",
+          "sizeBytes": 1871150,
+          "contentType": "image/png",
+          "placedOnNodeId": "23:18"
+        }
+      },
+      "cap-navy": {
+        "path": "assets/concepts/products/concept-cap-midnight-navy-01.png",
+        "response": {
+          "success": true,
+          "imageHash": "deafe20760201a0ccb796414c1de9f152196038d",
+          "sizeBytes": 1935059,
+          "contentType": "image/png",
+          "placedOnNodeId": "23:23"
+        }
+      },
+      "logo-white": {
+        "path": "assets/brand/deoluxe-logo-transparent-white-v3.png",
+        "response": {
+          "success": true,
+          "imageHash": "c85924b53389e0343c010d01cbd1ea37a0efa053",
+          "sizeBytes": 20463,
+          "contentType": "image/png",
+          "placedOnNodeId": "23:14"
+        }
+      },
+      "tee-ivory": {
+        "path": "assets/concepts/products/concept-tee-warm-ivory-01.png",
+        "response": {
+          "success": true,
+          "imageHash": "e5cb1e50a0a01e50c2643b56ce9297188afb1238",
+          "sizeBytes": 1421587,
+          "contentType": "image/png",
+          "placedOnNodeId": "23:27"
+        }
+      },
+      "tee-forest": {
+        "path": "assets/concepts/products/concept-tee-forest-green-01.png",
+        "response": {
+          "success": true,
+          "imageHash": "2be333861aa81936c9d842dd300a2bfe0cb41726",
+          "sizeBytes": 1400562,
+          "contentType": "image/png",
+          "placedOnNodeId": "23:31"
+        }
+      }
+    }
+  }
+}

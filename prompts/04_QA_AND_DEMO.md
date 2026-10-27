@@ -1,0 +1,1 @@
+Read `agents/04_qa_agent.md` and run the full test plan against the current build, following the demo script in `docs/MVP_SCOPE.md`. Produce `docs/QA_REPORT.md` with a go/no-go for the client demo and a prioritised fix list.

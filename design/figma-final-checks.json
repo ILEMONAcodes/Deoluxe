@@ -1,0 +1,18 @@
+[
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"page\":\"mobile\",\"frames\":34,\"texts\":413,\"links\":206,\"over\":[],\"small\":[],\"inProgress\":0}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"page\":\"desktop\",\"frames\":40,\"texts\":882,\"links\":507,\"over\":[],\"small\":[],\"inProgress\":0}"
+      }
+    ]
+  }
+]

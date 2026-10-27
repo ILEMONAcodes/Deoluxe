@@ -1,0 +1,35 @@
+[
+  {
+    "label": "mobile",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"oldSquareLogos\":0,\"conceptCards\":8,\"invalidCardSizes\":[],\"inProgress\":0}"
+        }
+      ]
+    }
+  },
+  {
+    "label": "desktop",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"oldSquareLogos\":0,\"conceptCards\":16,\"invalidCardSizes\":[],\"inProgress\":0}"
+        }
+      ]
+    }
+  },
+  {
+    "label": "colour-studio",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"oldSquareLogos\":0,\"conceptCards\":4,\"invalidCardSizes\":[],\"inProgress\":0}"
+        }
+      ]
+    }
+  }
+]

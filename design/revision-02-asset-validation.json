@@ -1,0 +1,104 @@
+[
+  {
+    "key": "logo-maroon",
+    "path": "assets/brand/deoluxe-logo-transparent-maroon-v3.png",
+    "width": 400,
+    "height": 349,
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "key": "cap-maroon",
+    "path": "assets/concepts/products/concept-cap-wine-maroon-01.png",
+    "width": 1243,
+    "height": 1265,
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "key": "cap-navy",
+    "path": "assets/concepts/products/concept-cap-midnight-navy-01.png",
+    "width": 1243,
+    "height": 1265,
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "key": "logo-white",
+    "path": "assets/brand/deoluxe-logo-transparent-white-v3.png",
+    "width": 400,
+    "height": 349,
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "key": "tee-ivory",
+    "path": "assets/concepts/products/concept-tee-warm-ivory-01.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "key": "tee-forest",
+    "path": "assets/concepts/products/concept-tee-forest-green-01.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

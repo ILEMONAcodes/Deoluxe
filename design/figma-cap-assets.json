@@ -1,0 +1,24 @@
+[
+  {
+    "name": "black",
+    "path": "assets/processed/products/products-statement-cap-black-cutout-v1.png",
+    "response": {
+      "success": true,
+      "imageHash": "eb0f451f5c2cc1048a368db1ff6a08d2b80dbb79",
+      "sizeBytes": 1885947,
+      "contentType": "image/png",
+      "placedOnNodeId": "6:76"
+    }
+  },
+  {
+    "name": "green",
+    "path": "assets/processed/products/products-statement-cap-green-cutout-v1.png",
+    "response": {
+      "success": true,
+      "imageHash": "fec68ebf7a02ad2ad19211f3c39bad0ac06b48cd",
+      "sizeBytes": 2305872,
+      "contentType": "image/png",
+      "placedOnNodeId": "6:77"
+    }
+  }
+]
