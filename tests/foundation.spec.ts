@@ -31,8 +31,8 @@ test("renders the approved foundation at each breakpoint", async ({ page }, test
   await page.screenshot({ path: `test-results/home-${testInfo.project.name}.png`, fullPage: true });
   await Promise.all(pendingScripts);
   const jsGzip = [...scripts.values()].reduce((total, body) => total + gzipSync(body).length, 0);
-  await testInfo.attach("home-js-gzip", { body: JSON.stringify({ bytes: jsGzip, budget: 150 * 1024 }), contentType: "application/json" });
-  expect(jsGzip).toBeLessThanOrEqual(150 * 1024);
+  await testInfo.attach("home-js-gzip", { body: JSON.stringify({ bytes: jsGzip, budget: 150_000 }), contentType: "application/json" });
+  expect(jsGzip).toBeLessThanOrEqual(150_000);
   expect(errors).toEqual([]);
 });
 
@@ -47,6 +47,10 @@ test("manifest and cached pages work offline; sensitive routes stay out of cache
   await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
   await page.reload();
   await page.waitForLoadState("networkidle");
+  await page.goto("/shop");
+  await page.waitForLoadState("networkidle");
+  await page.goto("/products/blackboy-black");
+  await page.waitForLoadState("networkidle");
   await page.evaluate(() => fetch("/orders", { cache: "no-store" }).then(response => response.status));
   const sensitiveCached = await page.evaluate(async () => {
     const requests = (await Promise.all((await caches.keys()).map(async name => (await caches.open(name)).keys()))).flat();
@@ -54,15 +58,21 @@ test("manifest and cached pages work offline; sensitive routes stay out of cache
   });
   expect(sensitiveCached).toBe(false);
   await context.setOffline(true);
-  // Current Chromium separates request failure emulation from navigator.onLine.
+  expect(await page.evaluate(() => fetch("/api/offline-probe", { cache: "no-store" }).then(() => false, () => true))).toBe(true);
+  await page.goto("/");
+  await expect(page.locator(".hero")).toBeVisible();
+  await page.goto("/products/blackboy-black");
+  await expect(page.getByRole("heading", { name: "BlackBoy Set", level: 1, exact: true })).toBeVisible();
+  await page.goto("/shop");
+  await expect(page.getByRole("heading", { name: "The collection." })).toBeVisible();
+  await page.goto("/not-previously-visited");
+  await expect(page.getByRole("heading", { name: "You’re offline." })).toBeVisible();
+  // Chromium exposes navigator.onLine separately from request-failure emulation.
+  // Check its banner after navigation checks, avoiding CDP's navigation side effects.
   const cdp = await context.newCDPSession(page);
   await cdp.send("Network.enable");
   await cdp.send("Network.overrideNetworkState", { offline: true, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
-  await expect(page.getByRole("status")).toContainText("You’re offline");
-  await page.goto("/");
-  await expect(page.locator(".hero")).toBeVisible();
-  await page.goto("/not-previously-visited");
-  await expect(page.getByRole("heading", { name: "You’re offline." })).toBeVisible();
+  await expect(page.locator(".offline-banner")).toContainText("You’re offline");
 });
 
 test("integer-kobo formatting rejects unsafe money inputs", () => {

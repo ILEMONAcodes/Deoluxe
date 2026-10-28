@@ -1,5 +1,5 @@
 "use client";
-import { useState, useTransition } from "react";
+import { useId, useState, useTransition } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { PreviewCard } from "@/components/product/preview-card";
@@ -12,7 +12,8 @@ type Filters = { category: string; size: string; availability: string; max: stri
 const blank: Filters = { category: "All", size: "", availability: "", max: "" };
 const categories = ["All", "Caps", "Tees", "Sets", "Jackets"];
 function FilterFields({ value, onChange }: { value: Filters; onChange: (next: Filters) => void }) {
-  return <><fieldset><legend>Category</legend><div className="filter-options">{categories.map(category => <label key={category}><input type="radio" name="category" checked={value.category === category} onChange={() => onChange({ ...value, category })} />{category === "All" ? "All pieces" : category}</label>)}</div></fieldset>
+  const group = useId();
+  return <><fieldset><legend>Category</legend><div className="filter-options">{categories.map(category => <label key={category}><input type="radio" name={`category-${group}`} checked={value.category === category} onChange={() => onChange({ ...value, category })} />{category === "All" ? "All pieces" : category}</label>)}</div></fieldset>
     <fieldset><legend>Size</legend><div className="filter-options">{["S", "M", "L", "XL", "One Size"].map(size => <label key={size}><input type="checkbox" checked={value.size === size} onChange={() => onChange({ ...value, size: value.size === size ? "" : size })} />{size}</label>)}</div></fieldset>
     <fieldset><legend>Availability</legend><div className="filter-options">{[["preview", "Preview pieces"], ["sold-out", "Sold out"], ["concept", "Colour concepts"]].map(([status, label]) => <label key={status}><input type="checkbox" checked={value.availability === status} onChange={() => onChange({ ...value, availability: value.availability === status ? "" : status })} />{label}</label>)}</div></fieldset>
     <label className="field-label">Maximum price (₦)<input className="text-input" type="number" min="0" step="1000" placeholder="100,000" value={value.max} onChange={event => onChange({ ...value, max: event.target.value })} /></label></>;
@@ -42,7 +43,7 @@ export function Catalogue({ pieces, mode = "shop" }: { pieces: CataloguePiece[];
   const concepts = filtered.filter(p => p.status === "concept"); const originals = filtered.filter(p => p.status !== "concept");
   const clear = () => startTransition(() => router.replace(pathname, { scroll: false }));
   if (mode === "saved" && !hydrated) return <div className="container storefront-page" role="status">Loading your saved pieces…</div>;
-  if (mode === "saved" && !base.length) return <section className="empty-state storefront-empty"><Icon name="emptyHeart" /><h1>Keep a little inspiration.</h1><p>Tap the heart on any piece to save it here.</p><Link className="button button--primary" href="/shop">Explore the collection</Link></section>;
+  if (mode === "saved" && !base.length) return <section className="empty-state storefront-empty"><Icon name="emptyHeart" /><h1>Keep a little inspiration.</h1><p>Tap the heart on any piece to save it here.</p><Link prefetch={false} className="button button--primary" href="/shop">Explore the collection</Link></section>;
   return <div className={`container storefront-page ${mode === "saved" ? "saved-page" : ""}`}>
     <div className="page-heading"><h1>{mode === "shop" ? "The collection." : mode === "saved" ? "Your saved pieces." : "Find your statement."}</h1>{mode !== "search" && <p>{mode === "saved" ? "Keep your favourites close." : "Pieces with presence. Find your next statement."}</p>}</div>
     <div className={`catalogue-search ${mode === "search" ? "catalogue-search--full" : ""}`}><form role="search" onSubmit={event => { event.preventDefault(); const data = new FormData(event.currentTarget); update({ q: String(data.get("q") ?? "") }); }}><input key={query} className="text-input" name="q" type="search" aria-label="Search pieces" placeholder={mode === "search" ? "Search caps, tees, sets…" : "Search Deoluxe"} defaultValue={query} /><button className="icon-button search-submit" type="submit" aria-label="Search"><Icon name="search" /></button></form>{mode !== "search" && <button className="icon-button" aria-label="Open filters" onClick={() => { setDraft(filters); setShowFilters(true); }}><Icon name="filter" /></button>}</div>
@@ -55,7 +56,7 @@ export function Catalogue({ pieces, mode = "shop" }: { pieces: CataloguePiece[];
         {!filtered.length ? <section className="empty-state storefront-empty"><Icon name="emptySearch" /><h2>Nothing here yet.</h2><p>Try another search or clear your filters.</p><button className="button button--primary" onClick={clear}>Clear filters</button></section> : <>
           {mode === "shop" && concepts.length > 0 && <section className="concept-results"><div className="section-heading"><h2>A different shade.</h2><p>New colour studies · proposed colourways</p></div><div className="product-grid concept-grid">{concepts.map(piece => <PreviewCard key={piece.id} piece={piece} />)}</div></section>}
           <div className="product-grid catalogue-grid">{(mode === "shop" ? originals : mode === "search" && !query ? pieces.filter(p => ["blackboy-black", "velvet-green", "blackboy-white", "statement-black"].includes(p.id)).sort((a,b) => ["blackboy-black", "velvet-green", "blackboy-white", "statement-black"].indexOf(a.id) - ["blackboy-black", "velvet-green", "blackboy-white", "statement-black"].indexOf(b.id)) : filtered).map(piece => <PreviewCard key={piece.id} piece={piece} />)}</div>
-          <p className="catalogue-end">{mode === "search" && !query ? <Link href="/shop">View the collection →</Link> : "You’ve seen every piece in this edit."}</p>
+          <p className="catalogue-end">{mode === "search" && !query ? <Link prefetch={false} href="/shop">View the collection →</Link> : "You’ve seen every piece in this edit."}</p>
         </>}
         <p className="preview-disclosure">Design preview · prices and stock await Deoluxe confirmation. Colour concepts are not for sale.</p>
       </div>

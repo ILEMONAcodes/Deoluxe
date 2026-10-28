@@ -62,3 +62,6 @@ All six selected assets are stored locally, uploaded to Figma Assets under Revis
 ## Frontend foundation derivatives
 
 `npm run assets` generates local WebP product/editorial images, copies the two selected transparent logo PNGs, packages PWA install icons on maroon tile surfaces, and copies approved Latin font subsets plus licences. All originals remain unchanged. Outputs and byte sizes: `assets/OPTIMISED_MANIFEST.json`. Product source images are capped at 120,000 bytes, with responsive Next Image delivery. Local Figma SVG icons are stored in `public/icons/ui/`; the frontend does not hotlink Figma assets.
+# Storefront implementation — 2026-10-27
+
+Exact Figma SVG exports added under `public/icons/ui/`: `back.svg` (24×24), `filter.svg` (24×24), `empty-heart.svg` (40×40), `empty-search.svg` (40×40), `size-grid.svg` (40×40). Source frames 6:80, 6:79, 14:863, 6:99 and 6:103. Root dimensions preserved. All storefront product/gallery imagery reuses local optimised assets from `assets/OPTIMISED_MANIFEST.json`; no temporary Figma runtime URLs or new generated product images.

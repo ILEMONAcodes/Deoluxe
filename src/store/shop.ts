@@ -1,7 +1,7 @@
 "use client";
 
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
 
 export type Selection = { id: string; size: string; colour: string; quantity: number };
 type ShopState = {
@@ -35,6 +35,11 @@ export const useShop = create<ShopState>()(persist((set) => ({
   removeSelection: index => set(state => ({ selections: state.selections.filter((_, i) => i !== index) })),
 }), {
   name: "deoluxe-shop-v1", version: 1, skipHydration: true,
+  storage: createJSONStorage(() => ({
+    getItem: name => localStorage.getItem(name),
+    setItem: (name, value) => { try { localStorage.setItem(name, value); } catch { if (!useShop.getState().storageFailed) queueMicrotask(() => useShop.setState({ storageFailed: true })); } },
+    removeItem: name => { try { localStorage.removeItem(name); } catch { /* In-memory selections still work if browser storage is blocked. */ } },
+  })),
   partialize: state => ({ favourites: state.favourites, selections: state.selections }),
   merge: (persisted, current) => ({ ...current, ...readPersisted(persisted) }),
   onRehydrateStorage: () => (_state, error) => { useShop.setState({ hydrated: true, storageFailed: Boolean(error) }); },

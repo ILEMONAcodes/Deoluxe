@@ -1,6 +1,6 @@
 # Deoluxe PWA
 
-The approved Figma design now has a local frontend foundation: Next.js App Router, strict TypeScript, Tailwind tokens, responsive Home composition, transparent branding and local product imagery, plus the Serwist offline shell.
+The approved Figma design is being implemented frame by frame: responsive Home, catalogue/search, product details and persistent favourites now run locally on the Next.js/Tailwind foundation, with transparent branding, local product imagery and a Serwist offline shell.
 
 ## Run locally
 
@@ -26,7 +26,7 @@ Browser checks use installed Google Chrome on macOS. CI installs Playwright Chro
 
 ## Current scope
 
-Home is a read-only composition from the approved design, including the four proposed cap/tee colourways. Header, footer, mobile navigation, brand marks, cards, buttons, typography and honest empty/offline/404 states form the shared foundation. Search/category links browse sections for now; product cards and favourite hearts are previews, not implemented shopping controls. Full catalogue, product selection, favourites persistence, cart and checkout follow their phase gates.
+Home links to `/shop`, `/search`, `/products/[slug]` and `/favourites`. Catalogue has responsive filters, sort and search with URL state. Products have colour galleries, enlargement, size selection and device-local preview bag selections. Favourites persist on this device. The four proposed cap/tee colourways remain clearly labelled concepts. Full bag/drawer and checkout are the next stage; `/cart` currently shows the preview selections. Waitlist UI explicitly remains unconnected. Frame mapping and remaining work are in `docs/FRONTEND_PROGRESS.md`.
 
 Product names/prices are provisional source-file fixtures; generated colourways have no invented price or stock. No payment or order is created.
 
@@ -49,7 +49,7 @@ Regenerate public assets with `npm run assets`. Version control retains the supp
 
 ## Deployment
 
-Connect this repository to Vercel: framework Next.js, install `npm ci`, build `npm run build`, Node 24. No backend credentials are needed for the read-only shell. No hosted preview has been published yet. See the Phase 2 gate in `AGENTS.md` before moving to the full storefront.
+Connect this repository to Vercel: framework Next.js, install `npm ci`, build `npm run build`, Node 24. No backend credentials are needed for the read-only shell. No hosted preview has been published yet. Review the storefront on a real phone at the Phase 3 gate in `AGENTS.md` before moving to commerce.
 
 ---
 

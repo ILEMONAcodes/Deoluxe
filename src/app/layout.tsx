@@ -5,8 +5,8 @@ import { Footer } from "@/components/layout/footer";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { PwaControls } from "@/components/pwa-controls";
 import { StoreHydration } from "@/components/shop/store-hydration";
-import "@/styles/storefront.css";
 import "@/styles/globals.css";
+import "@/styles/storefront.css";
 
 const inter = localFont({ src: "../fonts/inter-latin.woff2", variable: "--font-inter", display: "swap", weight: "100 900" });
 const playfair = localFont({ src: "../fonts/playfair-latin.woff2", variable: "--font-playfair", display: "swap", weight: "400 900" });
