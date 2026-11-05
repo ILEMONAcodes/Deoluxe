@@ -43,3 +43,12 @@ Public deployment, actual-phone demo, official prices/stock/size chart, and back
 - Previously visited Home, catalogue and product documents work without network; an uncached API request fails and protected routes remain excluded from caches. Real-device/slow-network Lighthouse verification is still pending.
 
 Stop here for the storefront review gate. Next implementation batch is the complete bag/drawer and checkout frames, followed by connected payment/order behaviour.
+
+## CI repair — 5 November 2026
+
+- Reproduced the failed GitHub Actions browser checks locally.
+- Public document caching now uses Network First with a 3-second timeout; navigation preload is disabled to prevent stale document navigation races.
+- Offline verification starts from a fresh controlled browser client and confirms Home, catalogue, product and fallback routes.
+- The desktop controlled-radio check now asserts the resulting URL navigation without depending on a remounted input node.
+- Official GitHub Actions were upgraded to Node 24-compatible major versions.
+- Final verification: lint, strict TypeScript and production build pass; Playwright passes with one and two workers: 19 passed, 2 intentionally skipped shared-worker duplicates.

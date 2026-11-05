@@ -11,7 +11,9 @@ test("catalogue filters, URL state, sorting, search and empty state", async ({ p
   await expect.poll(() => page.locator(".concept-grid img").evaluateAll(images => images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
   await page.screenshot({ path: `test-results/catalogue-${info.project.name}.png` });
   if (info.project.name === "desktop") {
-    await page.getByRole("radio", { name: "Caps", exact: true }).check();
+    // The URL transition remounts this controlled radio, so assert the
+    // resulting navigation instead of requiring the original node to remain checked.
+    await page.getByRole("radio", { name: "Caps", exact: true }).click();
   } else {
     await page.getByRole("button", { name: "Open filters" }).click();
     await expect(page.getByRole("dialog")).toBeVisible();

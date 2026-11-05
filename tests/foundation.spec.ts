@@ -57,22 +57,26 @@ test("manifest and cached pages work offline; sensitive routes stay out of cache
     return requests.some(request => /^\/(checkout|orders|admin|api)(\/|$)/.test(new URL(request.url).pathname));
   });
   expect(sensitiveCached).toBe(false);
+  // Start offline checks in a fresh client. Reusing the product page can leave
+  // its Next.js navigation lifecycle racing a later full-page navigation.
+  await page.close();
   await context.setOffline(true);
-  expect(await page.evaluate(() => fetch("/api/offline-probe", { cache: "no-store" }).then(() => false, () => true))).toBe(true);
-  await page.goto("/");
-  await expect(page.locator(".hero")).toBeVisible();
-  await page.goto("/products/blackboy-black");
-  await expect(page.getByRole("heading", { name: "BlackBoy Set", level: 1, exact: true })).toBeVisible();
-  await page.goto("/shop");
-  await expect(page.getByRole("heading", { name: "The collection." })).toBeVisible();
-  await page.goto("/not-previously-visited");
-  await expect(page.getByRole("heading", { name: "You’re offline." })).toBeVisible();
+  const offlinePage = await context.newPage();
+  await offlinePage.goto("/");
+  await expect(offlinePage.locator(".hero")).toBeVisible();
+  expect(await offlinePage.evaluate(() => fetch("/api/offline-probe", { cache: "no-store" }).then(() => false, () => true))).toBe(true);
+  await offlinePage.goto("/products/blackboy-black");
+  await expect(offlinePage.getByRole("heading", { name: "BlackBoy Set", level: 1, exact: true })).toBeVisible();
+  await offlinePage.goto("/shop");
+  await expect(offlinePage.getByRole("heading", { name: "The collection." })).toBeVisible();
+  await offlinePage.goto("/not-previously-visited");
+  await expect(offlinePage.getByRole("heading", { name: "You’re offline." })).toBeVisible();
   // Chromium exposes navigator.onLine separately from request-failure emulation.
   // Check its banner after navigation checks, avoiding CDP's navigation side effects.
-  const cdp = await context.newCDPSession(page);
+  const cdp = await context.newCDPSession(offlinePage);
   await cdp.send("Network.enable");
   await cdp.send("Network.overrideNetworkState", { offline: true, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
-  await expect(page.locator(".offline-banner")).toContainText("You’re offline");
+  await expect(offlinePage.locator(".offline-banner")).toContainText("You’re offline");
 });
 
 test("integer-kobo formatting rejects unsafe money inputs", () => {
